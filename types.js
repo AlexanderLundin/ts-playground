@@ -20,6 +20,11 @@ boolArray = [true, false, true];
 var strNumTuple;
 //data has to match whatever pattern is given at declaration, but the IDE will show an error
 strNumTuple = ['Association List', 4.0];
+//return types
+var myVoid = null;
+var myNull = null;
+var myUndefined = undefined;
 console.log(myString + ' ' + myNum + ' ' + myBool
     + ' ' + myVar + ' ' + strArray
-    + ' ' + numArray + ' ' + boolArray + ' ' + strNumTuple);
+    + ' ' + numArray + ' ' + boolArray + ' ' + strNumTuple
+    + ' ' + myVoid + ' ' + myNull + ' ' + myUndefined);

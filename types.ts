@@ -23,7 +23,13 @@ let strNumTuple: [string, number];
 //data has to match whatever pattern is given at declaration, but the IDE will show an error
 strNumTuple = ['Association List', 4.0];
 
+//return types
+let myVoid: void = null;
+let myNull: null = null;
+let myUndefined: undefined = undefined;
+
 console.log(myString + ' ' + myNum + ' ' + myBool 
     + ' ' + myVar + ' ' + strArray 
     + ' ' + numArray + ' ' + boolArray + ' ' + strNumTuple
+    + ' ' + myVoid + ' ' + myNull + ' ' + myUndefined
 )
