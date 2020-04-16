@@ -1,6 +1,13 @@
 // tsc classes.ts -w
+interface UserInterface{
+    // interfaces define public contracts
+    // meaning private feilds can not be defined in the interface
+    register();
 
-class User{
+    toString();
+}
+
+class User implements UserInterface{
     private name: string;
     private email: string;
     private age: number;
@@ -38,3 +45,16 @@ class User{
 
 let john = new User('John Doe', 'jd@gmail.com', 34);
 console.log(john.toString());
+
+class Member extends User {
+    private id: number;
+
+    constructor(id: number, user: User){
+        super(user.getName(), user.getEmail(), user.getAge());
+        this.id = id;
+        console.log('Member Created: ' + this.getName());
+        console.log(super.toString());
+    }
+}
+
+let member = new Member(1, john);
